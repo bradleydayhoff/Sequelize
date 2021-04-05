@@ -12,7 +12,7 @@ async function dataHandler() {
     appendItem.classList.add('td');
     appendItem.innerHTML = `
     <tr>
-    <td>${item.hall_id}</td>
+    <th>${item.hall_id}</th>
     <td>${item.hall_name}</td>
     <td>${item.hall_address}</td>
     </tr>`;
