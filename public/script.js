@@ -7,8 +7,8 @@ async function getData() {
 async function dataHandler() {
   const targetTable = document.querySelector('.target-table');
   const table = document.querySelector('.table');
-  const diningrequest = await fetch('/api/dining');
-  const diningdata = await diningrequest.json();
+  // const diningrequest = await fetch('/api/dining');
+  const diningdata = await getData();
   diningdata.data.forEach((item) => {
     const appendItem = document.createElement('tr');
     appendItem.classList.add('td');
